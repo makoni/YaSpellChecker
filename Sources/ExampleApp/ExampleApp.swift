@@ -7,11 +7,11 @@ struct ExampleApp {
     static func main() async {
         let checker = YaSpellChecker()
         let textWithErrors = "Это тектс с арфаграфическми ашбиками для демонстрации работы спеллера."
-        print("Исходный текст:")
+        print("\nИсходный текст / Original text:")
         print(textWithErrors)
         do {
             let corrected = try await checker.checkAndCorrect(text: textWithErrors)
-            print("\nИсправленный текст:")
+            print("\nИсправленный текст / Corrected text:")
             print(highlightDifferences(original: textWithErrors, corrected: corrected))
         } catch {
             print("Ошибка проверки: \(error.localizedDescription)")
