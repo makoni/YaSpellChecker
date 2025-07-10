@@ -33,6 +33,10 @@ let package = Package(
         .executableTarget(
             name: "ExampleApp",
             dependencies: ["YaSpellChecker"]
+        ),
+        .testTarget(
+            name: "YaSpellCheckerTests",
+            dependencies: ["YaSpellChecker"]
         )
     ]
 )
