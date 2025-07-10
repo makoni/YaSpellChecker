@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:YaSpellChecker}",
+            "name": "Debug ExampleApp",
+            "program": "${workspaceFolder:YaSpellChecker}/.build/debug/ExampleApp",
+            "preLaunchTask": "swift: Build Debug ExampleApp"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:YaSpellChecker}",
+            "name": "Release ExampleApp",
+            "program": "${workspaceFolder:YaSpellChecker}/.build/release/ExampleApp",
+            "preLaunchTask": "swift: Build Release ExampleApp"
+        }
+    ]
+}
