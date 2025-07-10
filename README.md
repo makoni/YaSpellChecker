@@ -1,6 +1,12 @@
 # YaSpellChecker
 
-<img alt="A Swift package for spell checking using Yandex.Speller" src="https://arm1.ru/img/uploaded/a-swift-package-for-spell-checking-using-yandex-speller.webp?1" style="width: 100%; max-width: 800px;">
+<div align="center">
+    <a href="#english">English</a> | <a href="#русский">Русский</a>
+</div>
+
+<div align="center">
+    <img alt="A Swift package for spell checking using Yandex.Speller" src="https://arm1.ru/img/uploaded/a-swift-package-for-spell-checking-using-yandex-speller.webp?1" style="width: 100%; max-width: 800px;">
+</div>
 
 ## English
 
