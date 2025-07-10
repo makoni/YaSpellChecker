@@ -10,6 +10,19 @@ public enum YaSpellCheckerError: Error {
     case decodingError(Error)
 }
 
+extension YaSpellCheckerError: LocalizedError {
+    public var errorDescription: String? {
+        switch self {
+        case .networkError:
+            return String(localized: "YaSpellCheckerError.networkError", defaultValue: "Network error while connecting to Yandex Speller.")
+        case .invalidResponse:
+            return String(localized: "YaSpellCheckerError.invalidResponse", defaultValue: "Invalid response from Yandex Speller service.")
+        case .decodingError:
+            return String(localized: "YaSpellCheckerError.decodingError", defaultValue: "Failed to decode Yandex Speller response.")
+        }
+    }
+}
+
 /// Структура для ответа Яндекс Спеллера
 struct YandexSpellerError: Codable {
     let code: Int
