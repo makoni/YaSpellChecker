@@ -27,4 +27,16 @@ struct YaSpellCheckerTests {
         let result = try await checker.checkAndCorrect(text: input)
         #expect(result == input)
     }
+
+    @Test("Contains HTML")
+    func noCorrectionNeededContainsHTML() async throws {
+        let checker = YaSpellChecker()
+        let input = """
+<ul>
+    Корректный текст.
+</ul>
+"""   
+        let result = try await checker.checkAndCorrect(text: input, format: "html")
+        #expect(result == input)
+    }
 }
