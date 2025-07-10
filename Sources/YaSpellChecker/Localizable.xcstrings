@@ -1,0 +1,39 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "YaSpellCheckerError.decodingError" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Failed to decode Yandex Speller response."
+          }
+        }
+      }
+    },
+    "YaSpellCheckerError.invalidResponse" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Invalid response from Yandex Speller service."
+          }
+        }
+      }
+    },
+    "YaSpellCheckerError.networkError" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Network error while connecting to Yandex Speller."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

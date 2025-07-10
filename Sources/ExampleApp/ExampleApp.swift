@@ -14,7 +14,7 @@ struct ExampleApp {
             print("\nИсправленный текст:")
             print(highlightDifferences(original: textWithErrors, corrected: corrected))
         } catch {
-            print("Ошибка проверки: \(error)")
+            print("Ошибка проверки: \(error.localizedDescription)")
         }
     }
 }

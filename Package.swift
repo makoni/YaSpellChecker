@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "YaSpellChecker",
+    defaultLocalization: "en",
     platforms: [
         .macOS(.v13),
         .iOS(.v16),
@@ -24,7 +25,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "YaSpellChecker"
+            name: "YaSpellChecker",
+            resources: [
+                .process("Localizable.xcstrings")
+            ]
         ),
         .executableTarget(
             name: "ExampleApp",
