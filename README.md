@@ -1,5 +1,7 @@
 # YaSpellChecker
 
+<img alt="A Swift package for spell checking using Yandex.Speller" src="https://arm1.ru/img/uploaded/a-swift-package-for-spell-checking-using-yandex-speller.webp?1" style="width: 100%; max-width: 800px;">
+
 ## English
 
 **YaSpellChecker** is a Swift Package for spell checking and automatic correction of Russian and English texts using the Yandex Speller API. It provides an async actor interface for easy integration into your Swift applications and scripts.
