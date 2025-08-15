@@ -2,6 +2,9 @@
 // https://docs.swift.org/swift-book
 
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// Ошибки Яндекс Спеллера
 public enum YaSpellCheckerError: Error {
@@ -14,11 +17,11 @@ extension YaSpellCheckerError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .networkError:
-            return String(localized: "YaSpellCheckerError.networkError", defaultValue: "Network error while connecting to Yandex Speller.")
+            return Bundle.module.localizedString(forKey: "YaSpellCheckerError.networkError", value: "Network error while connecting to Yandex Speller.", table: nil)
         case .invalidResponse:
-            return String(localized: "YaSpellCheckerError.invalidResponse", defaultValue: "Invalid response from Yandex Speller service.")
+            return Bundle.module.localizedString(forKey: "YaSpellCheckerError.invalidResponse", value: "Invalid response from Yandex Speller service.", table: nil)
         case .decodingError:
-            return String(localized: "YaSpellCheckerError.decodingError", defaultValue: "Failed to decode Yandex Speller response.")
+            return Bundle.module.localizedString(forKey: "YaSpellCheckerError.decodingError", value: "Failed to decode Yandex Speller response.", table: nil)
         }
     }
 }
@@ -37,6 +40,8 @@ struct YandexSpellerError: Codable {
 /// Actor для проверки и исправления орфографии через Яндекс Спеллер API
 public actor YaSpellChecker {
     public init() {}
+    /// Public accessor for the package's resource bundle (useful in tests)
+    public static var bundle: Bundle { Bundle.module }
     private let endpoint = "https://speller.yandex.net/services/spellservice.json/checkText"
 
     /// Проверяет и исправляет орфографию в тексте
