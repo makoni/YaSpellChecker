@@ -1,5 +1,9 @@
 # YaSpellChecker
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmakoni%2FYaSpellChecker%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/makoni/YaSpellChecker)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmakoni%2FYaSpellChecker%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/makoni/YaSpellChecker)
+
+
 <div align="center">
     <a href="#english">English</a> | <a href="#русский">Русский</a>
 </div>
